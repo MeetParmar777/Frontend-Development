@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+        body
+        {
+            height: 83vh;
+            background: linear-gradient(45deg, lightblue 50%,purple);
+        }
+        
+        .main{
+            height: 300px;
+            width: 500px;
+            border: 2px solid;
+            background-color: white;
+            margin: 100px auto;
+        }
+        .heading{
+            text-align: center;
+            background: linear-gradient(50deg, blue,purple 80%);
+            color: transparent;
+            /* background-clip: text;/ */
+            -webkit-background-clip: text;
+            font-size: 33px;
+        }
+        
+        .container1
+        {
+            display: flex;
+            padding: 10px;
+        }
+        .container1 .text1
+        {
+            margin-left: 15px;
+            border: none;
+            border-bottom: 2px solid;
+            padding-bottom: 7px;
+        }
+        .container1 .text2
+        {
+            margin-left: 100px;
+            border: none;
+            border-bottom: 2px solid;
+            padding-bottom: 7px;
+        }
+        
+        
+        input::placeholder
+        {
+            color: black;
+        }
+        input:focus
+        {
+            outline: none;
+        }
+        
+        
+        .container2
+        {
+            display: flex;
+            padding: 10px;
+        }
+        .container2 .text3
+        {
+            margin-left: 15px;
+            border: none;
+            border-bottom: 2px solid;
+            padding-bottom: 7px;
+        }
+        .container2 .text4
+        {
+            margin-left: 100px;
+            border: none;
+            border-bottom: 2px solid;
+            padding-bottom: 7px;
+        }
+
+        .text5
+        {
+            padding-top: 25px;
+            padding-bottom: 10px;
+            margin-left: 25px; 
+            border: none;
+            border-bottom: 2px solid;
+            padding-bottom: 7px;   
+        }
+        .container3 .btn
+        {
+           margin-left: 25px;
+           margin-top: 22px; 
+           padding: 9px 33px 9px 33px;
+           background: linear-gradient(60deg, lightblue,purple);
+           color: white;
+           font-weight: bold;
+           border: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="main">
+            <h2 class="heading">Responsive Contact us Form</h2>
+            <div class="container1">
+                <input class="text1" placeholder="First Name"></input>
+                <input class="text2" placeholder="Last Name"></input>
+            </div>
+            
+            <div class="container2">    
+                <input class="text3" placeholder="Email Address"></input>
+                <input class="text4" placeholder="Website Name"></input>
+            </div>    
+                <input class="text5" placeholder="Write your message"> </input>
+            <div class="container3">
+                <button class="btn">SUBMIT</button>
+            </div>
+        </div>
+</body>
+</html>
