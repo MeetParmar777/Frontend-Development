@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kanit:wght@300;400;500&display=swap');
+        
+        *{font-family: 'Bree Serif', serif;}
+        
         p{
             margin: 0px;
             padding: 0px;
@@ -17,7 +21,7 @@
         }
         
         .main{
-            height: 300px;
+            /* height: 300px; */
             width: 500px;
             border: 2px solid;
             background-color: white;
@@ -30,6 +34,8 @@
             /* background-clip: text;/ */
             -webkit-background-clip: text;
             font-size: 33px;
+            font-family: 'Bree Serif', 'serif';
+            /* font-weight: 800; */
         }
         
         .container1
@@ -43,19 +49,23 @@
             border: none;
             border-bottom: 2px solid;
             padding-bottom: 7px;
+            width: 180px;
         }
         .container1 .text2
         {
-            margin-left: 100px;
+            margin-left: 75px;
             border: none;
             border-bottom: 2px solid;
             padding-bottom: 7px;
+            width: 180px;
         }
         
         
         input::placeholder
         {
             color: black;
+            font-weight: 300;
+            font-size: 1rem;
         }
         input:focus
         {
@@ -74,13 +84,15 @@
             border: none;
             border-bottom: 2px solid;
             padding-bottom: 7px;
+            width: 180px;
         }
         .container2 .text4
         {
-            margin-left: 100px;
+            margin-left: 75px;
             border: none;
             border-bottom: 2px solid;
             padding-bottom: 7px;
+            width: 180px;
         }
 
         .text5
@@ -91,16 +103,21 @@
             border: none;
             border-bottom: 2px solid;
             padding-bottom: 7px;   
+            width: 445px;
         }
         .container3 .btn
         {
            margin-left: 25px;
-           margin-top: 22px; 
+           margin-top: 30px;
+           margin-bottom: 25px; 
            padding: 9px 33px 9px 33px;
            background: linear-gradient(60deg, lightblue,purple);
            color: white;
            font-weight: bold;
            border: none;
+           font-weight: 400;
+           font-size: 1rem;
+            cursor: pointer;
         }
     </style>
 </head>
