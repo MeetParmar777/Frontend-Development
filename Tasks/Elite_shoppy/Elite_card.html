@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite_card</title>
+    <style>
+        *{box-sizing: border-box;
+            margin: 0px;}
+
+        .main
+        {
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color: aquamarine; */
+            justify-content: center;
+        }
+        #card
+        {
+            height: 440px;
+            width: 250px;
+            position: relative;
+            /* border: 2px solid; */
+            box-shadow: 0 0 8px black;
+            margin: 30px;
+        }
+        .images
+        {
+            height: 275px;
+            width: 250px
+            /* background-color: blueviolet; */
+        }
+        .src1
+        {
+            height: 250px;
+            width: 200px;
+            /* background: url(card1.jpg); */
+            background-size: 85% 90%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: rotateY(0deg);
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .src2
+        {
+            height: 250px;
+            width: 200px;
+            /* background: url(card1.jpg); */
+            background-size: 85% 90%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .quickview
+        {
+            height: 40px;
+            width: 250px;
+            background-color: black;
+            color: white;
+            padding: 12px 0 0 72px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.7s;
+        }
+        .text
+        {
+            height: 150px;
+            width: 250px;
+            /* background-color: lightgreen; */
+        }
+        
+        .images:hover .quickview  
+        {
+            top: 250px;
+            opacity: 1;
+        } 
+        .quickview:hover
+        {
+            background-color: #2fdab8;
+            cursor: pointer;
+        }
+        .images:hover .src1
+        {
+            transform: rotateY(180deg);
+        }
+        .images:hover .src2
+        {
+            transform: rotateY(0deg);
+        }
+
+
+        .x1
+        {
+            padding: 30px 0px 0px 50px;
+            margin: 0;
+            color: red;
+            font-size: 1.1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .x2
+        {
+            padding: 15px 0px 0px 60px;
+            margin: 0px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        del
+        {
+            color: rgba(147 126 126);
+            margin-left: 10px;
+        }
+        
+        .shop
+        {
+            height: 30px;
+            width: 190px;
+            background-color: #2fdab8;
+            color: white;
+            /* margin: 150px auto;  */
+            padding: 5px 0px 0px 43px;
+            letter-spacing: 0px;
+            position: absolute;
+            bottom: 26px;
+            left: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }
+        .shop::before
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transition: 0.5s;
+            outline: 4px solid #2fdab8;
+            opacity: 0;
+        }
+        .shop:hover::before 
+        {
+            top: -4px;
+            right: -4px;
+            bottom: -4px;
+            left: -4px;
+            opacity: 1;
+        }
+        .new
+        {
+            height: 20px;
+            width: 50px;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            background-color: red;
+            color: white;
+            padding: 0px 0 0 10px;
+            display: block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }   
+        .editing1
+        {
+            padding: 29px 0px 0px 4px;
+        }
+        .editing2
+        {
+            padding: 29px 0px 0px 27px;
+        }
+        .editing3
+        {
+            padding: 29px 0px 0px 12px;
+        }
+        .editing4
+        {
+            padding: 29px 0px 0px 48px;
+        }
+        .editing5
+        {
+            padding: 29px 0px 0px 70px;
+        }
+        .editing6
+        {
+            padding: 29px 0px 0px 57px;
+        }
+        .editing7
+        {
+            padding: 29px 0px 0px 45px;
+        }
+        .editing8
+        {
+            padding: 29px 0px 0px 4px;
+        }
+        </style>
+</head>
+<body>
+<div class="main">
+
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card1.jpg" alt="" class="src1">
+                <img src="card1.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1">Formal Blue Shirt</p>
+            <p class="x2">$45.99 <del>$69.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card2.jpg" alt="" class="src1">
+                <img src="card2.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1 editing1">Gabi Full Sleeve Sweatshirt</p>
+            <p class="x2">$45.99 <del>$69.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card3.jpg" alt="" class="src1">
+                <img src="card3.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1 editing2">Dark Blue Track Pants</p>
+            <p class="x2">$80.99 <del>$89.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card4.jpg" alt="" class="src1">
+                <img src="card4.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1 editing3">Round Neck Black T-Shirt</p>
+            <p class="x2">$190.99 <del>$159.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card5.jpg" alt="" class="src1">
+                <img src="card5.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1 editing4">Men's Black Jeans</p>
+            <p class="x2">$60.99 <del>$90.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card6.jpg" alt="" class="src1">
+                <img src="card6.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1 editing5">Analog Watch</p>
+            <p class="x2">$160.99 <del>$290.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card7.jpg" alt="" class="src1">
+                <img src="card7.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1 editing6">Reversible Belt</p>
+            <p class="x2">$30.99 <del>$50.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <p class="new">New</p>
+        
+        <div class="images">
+
+                <img src="card8.jpg" alt="" class="src1">
+                <img src="card8.jpg" alt="" class="src2">
+            
+            <div class="quickview"> QUICK VIEW </div>
+        </div>
+        
+        <div class="text">
+            <p class="x1 editing7">Party Men's Blazer</p>
+            <p class="x2">$260.99 <del>$390.71</del>  </p>
+            <div class="shop">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+        
+        
+
+        
+        
+        
+
+</body>
+</html>
