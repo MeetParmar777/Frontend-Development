@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .main
+        {
+            height: 600px;
+            width: 55%;
+            background: linear-gradient(blue,black,pink,red);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+        .shoe
+        {
+            height: 390px;
+            width: 290px;
+            background: linear-gradient(rgb(125, 225, 125),rgb(112, 213, 246));
+            position: relative;
+        }
+        .shoe .pic
+        {
+            height: 250px;
+            width: 400px;
+            /* background-color: aqua; */
+            position: absolute;
+            top: 70px;
+            left: -70px; 
+            transform: rotateY(180deg) rotateZ(-30deg);
+        }
+        .details
+        {
+            height: 500px;
+            width: 340px;
+            background: white;
+        }
+
+        
+        .icons
+        {
+            margin-left: 30px;
+            margin-right: 90px;
+            /* background-color: brown; */
+            display: inline-block;
+        }
+        .icons .fa
+        {
+            color: gold;
+        }
+        .price
+        {
+            display: inline-block;
+            font-size: 2.5rem;
+            /* background-color: brown; */
+        }
+        span
+        {
+            font-size: 1.5rem;
+        }
+        
+        .text1
+        {
+            /* background-color: brown; */
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin: 0;
+            margin-left: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .text2
+        {
+            /* background-color: brown; */
+            font-size: 1.2rem;
+            margin: 0;
+            margin-left: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .text3
+        {
+            /* background-color: brown; */
+            margin-left: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .circle1
+        {
+            height: 30px;
+            width: 30px;
+            background-color: blue;
+            margin-left: 30px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .circle2
+        {
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            margin-left: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .circle3
+        {
+            height: 30px;
+            width: 30px;
+            background-color: lightgreen;
+            margin-left: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .circle4
+        {
+            height: 30px;
+            width: 30px;
+            background-color: blueviolet;
+            margin-left: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .circle5
+        {
+            height: 30px;
+            width: 30px;
+            background-color: purple;
+            margin-left: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .text4
+        {
+            /* background-color: brown; */
+            margin-left: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .shape
+        {
+            height: 40px;
+            width: 100px;
+            background-color: white;
+            margin-left: 30px;
+            border-radius: 50px;
+        }
+        
+        .cart
+        {
+            height: 40px;
+            width: 250px;
+            background-color: rgb(23, 165, 212);
+            margin-left: 40px;
+            margin-top: 60px;
+            border-radius: 50px;
+            padding: 2px 0px 0px 0px;
+            box-sizing: border-box;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 4px;
+            font-weight: 700;
+            color: white;
+        }
+        .text5
+        {
+            display: inline;
+            margin-left: 35px;
+        }
+        .cart .fa
+        {
+            margin-top: 3px;
+            /* background-color: brown; */
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="shoe">
+            <img src="shoe1.png" alt="" class="pic">
+        </div>
+
+        <div class="details">
+            <div class="icons">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p class="price"><span>$</span>220</p>
+
+            <p class="text1">Nike Airmax</p>
+            <p class="text2">Men's Running Shoe</p>
+            <p class="text3">COLOR</p>
+                <div class="circles">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                    <div class="circle5"></div>
+                </div>
+            <p class="text4">SIZE</p>
+                <button class="shape">
+                    <i class="fa fa-minus"></i>
+                        10
+                    <i class="fa fa-plus"></i>
+                </button>
+            
+            <div class="cart">
+                <p class="text5">ADD TO CART</p>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
