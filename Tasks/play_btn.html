@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play_btn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main
+        {
+            height: 150px;
+            width: 150px;
+            background-color: lightblue;
+            margin: 150px auto;
+            border-radius: 50%;
+            position: relative;
+        }
+        .effect1
+        {
+            height: 150px;
+            width: 150px;
+            background-color: lightblue;
+            border-radius: 50%;
+            animation: play1 1s infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .effect2
+        {
+            height: 150px;
+            width: 150px;
+            background-color: lightblue;
+            border-radius: 50%;
+            animation: play2 1s infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        @keyframes play1
+        {
+            from{transform: scale(1);opacity: 1;}
+            to{transform: scale(2);opacity: 0;}
+        }
+        @keyframes play2
+        {
+            from{transform: scale(1);opacity: 1;}
+            to{transform: scale(3);opacity: 0;}
+        }
+
+        .fa-play
+        {
+            margin: 66px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <i class="fa fa-play"></i>
+        <div class="effect1"></div>
+        <div class="effect2"></div>
+    </div>
+</body>
+</html>
